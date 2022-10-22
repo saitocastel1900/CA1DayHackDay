@@ -26,7 +26,7 @@ namespace Saito.Gimick4
         /// <summary>
         /// オブジェクトのアクティブ状態を設定
         /// </summary>
-        public async UniTask ObjectUpdateActive()
+        public async UniTask ObjectActiveUpdate()
         {
             await UniTask.Delay(TimeSpan.FromSeconds(2f), cancellationToken: this.GetCancellationTokenOnDestroy());
             _gimick4.SetActive(false);

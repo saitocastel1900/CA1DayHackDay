@@ -18,7 +18,7 @@ namespace Saito.Gimick4
                     if (value == true)
                     {
                         _view.UpdateText("よし！");
-                        _view.ObjectUpdateActive().Forget();
+                        _view.ObjectActiveUpdate().Forget();
                     }
                 })
                 .AddTo(this);
