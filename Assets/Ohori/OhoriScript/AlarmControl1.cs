@@ -58,6 +58,6 @@ public class AlarmControl1 : MonoBehaviour
 
     private void AudioPlay()
     {
-        GetComponent<AudioSource>().Play(); //OneShot(Tapp);
+        GetComponent<AudioSource>().PlayOneShot(Tapp);
     }
 }
