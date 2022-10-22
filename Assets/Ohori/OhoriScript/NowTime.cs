@@ -10,7 +10,7 @@ public class NowTime : MonoBehaviour
     private float IncrementalTime;//経過時間
 
     [SerializeField]
-    private Text InGgameTime;
+    private Text InGgameTime;//時間を表すテキスト
 
     // Start is called before the first frame update
     void Start()
