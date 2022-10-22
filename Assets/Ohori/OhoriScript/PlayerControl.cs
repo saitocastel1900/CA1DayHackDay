@@ -16,7 +16,7 @@ public class PlayerControl : MonoBehaviour
         if (!GameObject.FindWithTag("CountDownTime"))//CountDownTime‚Æ‚¢‚¤ƒ^ƒO‚ª‚ ‚é‚Æ‚«
         {
             var direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
-            var dv = 4f * Time.deltaTime * direction;
+            var dv = 72f * Time.deltaTime * direction;
             this.transform.Translate(dv.x, dv.y, 0f);
         }
     }
