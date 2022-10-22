@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Threading.Tasks;
 using UnityEngine.UI;
 using UnityEngine;
 using UniRx;
@@ -25,8 +26,9 @@ namespace Saito.Gimick5
            _receiver.SetActive(true);
         }
 
-        public void Scenetransition()
+        public async UniTask SceneTransition()
         {
+            await UniTask.Delay(TimeSpan.FromMilliseconds(5f),cancellationToken:this.gameObject.GetCancellationTokenOnDestroy());
             _gimick5.gameObject.SetActive(false);
         }
     }
