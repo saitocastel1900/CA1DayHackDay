@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 836158741}
   m_Layer: 5
   m_Name: CountDown
-  m_TagString: Untagged
+  m_TagString: CountDownTime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -483,6 +483,7 @@ GameObject:
   - component: {fileID: 1449203352}
   - component: {fileID: 1449203354}
   - component: {fileID: 1449203353}
+  - component: {fileID: 1449203355}
   m_Layer: 5
   m_Name: NowTime
   m_TagString: Untagged
@@ -551,6 +552,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449203351}
   m_CullTransparentMesh: 1
+--- !u!114 &1449203355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449203351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a9b753f5bfe3348a9ef7d2b4cdb863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InGgameTime: {fileID: 1449203353}
 --- !u!1 &1974608153
 GameObject:
   m_ObjectHideFlags: 0
