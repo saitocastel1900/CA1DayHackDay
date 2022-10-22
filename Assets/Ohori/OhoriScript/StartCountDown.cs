@@ -24,6 +24,7 @@ public class StartCountDown : MonoBehaviour
         ReductionTime -= Time.deltaTime;//カウントダウン
         CountDownTime = (int)ReductionTime;//カウントダウンを院int型に変更
         CountDown.text= CountDownTime.ToString();//反映
+
         if (CountDownTime <= -1)//もしカウントダウンが-1以下になったら
         {
             Destroy(this.gameObject);//オブジェクトを破棄
