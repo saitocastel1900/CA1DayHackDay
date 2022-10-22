@@ -1,18 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
-public class ImageScaleUpLoop : MonoBehaviour
+namespace Saito
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ImageScaleUpLoop : MonoBehaviour
     {
-        
-    }
+        // Start is called before the first frame update
+        void Start()
+        {
+            ScaleUpAnimation();
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void ScaleUpAnimation()
+        {
+            var obj = this.gameObject.transform;
+            //DOTween.Sequence().Append().SetEase(Ease.Linear).SetLink(this.gameObject).SetLoops(-1,LoopType.Yoyo);
+        }
     }
 }
