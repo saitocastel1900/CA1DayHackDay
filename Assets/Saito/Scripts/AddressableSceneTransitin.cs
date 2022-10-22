@@ -4,7 +4,7 @@ using UniRx;
 using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 
-namespace Saito
+namespace Saito.Common
 {
     public class AddressableSceneTransitin : MonoBehaviour
     {
