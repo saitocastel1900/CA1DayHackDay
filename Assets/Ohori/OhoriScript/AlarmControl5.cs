@@ -11,7 +11,6 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField]
     public bool Play;//再生の判定
 
-    private int Interval;//インターバル
 
 
     [SerializeField]
@@ -21,7 +20,6 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Interval = 15;
         Alarm = true;
         Play = true;
         AlarmTime = 170;
