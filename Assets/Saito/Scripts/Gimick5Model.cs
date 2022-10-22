@@ -1,9 +1,9 @@
 using UniRx;
 using UnityEngine;
 
-namespace Saito.Gimick4
+namespace Saito.Gimick5
 {
-    public class Gimick4Model : MonoBehaviour
+    public class Gimick5Model : MonoBehaviour
     {
         private BoolReactiveProperty _value = new BoolReactiveProperty(false);
         public IReadOnlyReactiveProperty<bool> Value => _value;

@@ -1,4 +1,3 @@
-using System;
 using Cysharp.Threading.Tasks;
 using UniRx;
 using UnityEngine;
@@ -18,13 +17,14 @@ namespace Saito.Gimick4
                     if (value == true)
                     {
                         _view.UpdateText("よし！");
-                        _view.ObjectUpdateActive().Forget();
+                        //ここで音を流す
+                        _view.SceneTransition().Forget();
                     }
                 })
                 .AddTo(this);
 
             _view.ObservableClickButton()
-                .Subscribe(_ => _model.UpdateCount(true))
+                .Subscribe(_ => _model.UpdateValue(true))
                 .AddTo(this);
         }
     }
