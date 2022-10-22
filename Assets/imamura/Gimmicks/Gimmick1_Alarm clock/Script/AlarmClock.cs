@@ -11,6 +11,11 @@ public class AlarmClock : MonoBehaviour
     public AudioClip Knock;
     AudioSource audioSource;
     public GameObject Hand;
+
+
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +54,7 @@ public class AlarmClock : MonoBehaviour
         audioSource.PlayOneShot(Knock);
         //ƒAƒ‰[ƒ€‚ğ~‚ß‚éˆ—
         yield return new WaitForSeconds(0.63f);
-        StartCoroutine("ChangeColor");
+      
         Gimmick1_Panel.SetActive(false);
         Gimmick1_actuation=false;
     }
