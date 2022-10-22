@@ -23,16 +23,20 @@ public class NowTime : MonoBehaviour
     void Update()
     {
         IncrementalTime += Time.deltaTime;//経過時間
+
         if (GameObject.FindWithTag("CountDownTime"))//CountDownTimeというタグがあるとき
         {
             ZeroSetting();//0に設定
         }
+
         InGgameTimeMinutes = (int)IncrementalTime;//経過時間をint型に直す
+
         if (InGgameTimeMinutes >= 60)//60以上の時
         {
             InGgameTimeHours += 1;//Hoursに1追加
             ZeroSetting();//0に設定
         }
+
         if (InGgameTimeMinutes < 10)//Minutsが10未満の時
         {
             InGgameTime.text = InGgameTimeHours + ":0" + InGgameTimeMinutes;//テキストに反映
