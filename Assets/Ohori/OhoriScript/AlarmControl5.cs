@@ -24,7 +24,6 @@ public class NewBehaviourScript : MonoBehaviour
         Interval = 15;
         Alarm = true;
         Play = true;
-        set = true;
         AlarmTime = 170;
     }
 
