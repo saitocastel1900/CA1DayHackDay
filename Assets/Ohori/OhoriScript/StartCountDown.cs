@@ -27,6 +27,7 @@ public class StartCountDown : MonoBehaviour
 
         if (CountDownTime <= -1)//もしカウントダウンが-1以下になったら
         {
+            GetComponent<AudioSource>().Stop();
             Destroy(this.gameObject);//オブジェクトを破棄
         }
     }
