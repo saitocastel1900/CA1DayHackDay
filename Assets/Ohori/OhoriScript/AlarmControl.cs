@@ -45,6 +45,11 @@ public class AlarmControl : MonoBehaviour
             set[i] = true;
             AlarmTime[i] = 5 + 20 * i;
         }
+
+
+        //ƒAƒ‰[ƒ€3‚Æ4‚ª‚Å‚«‚Ä‚¢‚È‚¢‚©‚ç‚È‚ç‚È‚¢‚æ‚¤‚É
+        AlarmTime[3] = 310;
+        AlarmTime[4] = 310;
     }
 
     // Update is called once per frame
