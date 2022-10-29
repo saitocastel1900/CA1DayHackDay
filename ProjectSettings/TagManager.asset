@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - CountDownTime
+  - Alarm1
+  - Alarm2
+  - Alarm3
+  - Alarm4
+  - Alarm5
+  - Alarm6
+  - AlarmControl
   layers:
   - Default
   - TransparentFX
